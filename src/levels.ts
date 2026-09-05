@@ -1,0 +1,107 @@
+import type { LevelDef } from './logic/board';
+
+/**
+ * Level maps. See the legend in `logic/board.ts`.
+ * Maps are portrait-friendly (max 9 wide) so they fit phone screens.
+ */
+export const LEVELS: LevelDef[] = [
+  {
+    id: 1,
+    name: 'First Walk',
+    subtitle: 'Find the key, unlock the gate.',
+    par: 34,
+    map: [
+      '#L#####L#',
+      '#P..#..t#',
+      '#.#.#.#.#',
+      '#.#...#.#',
+      '#.###.#.#',
+      '#k..#...#',
+      '###.L.###',
+      '#...#K..#',
+      '#.###.#.#',
+      '#.....#X#',
+      '#########',
+    ],
+  },
+  {
+    id: 2,
+    name: 'Heavy Lifting',
+    subtitle: 'Boxes hold buttons down.',
+    par: 34,
+    map: [
+      '###L#L###',
+      '#P......#',
+      '#.##.##.#',
+      '#.#...#.#',
+      '#.#.B.#.#',
+      '#.#...#.#',
+      '#.##b##.#',
+      '#.......#',
+      '##L#D#L##',
+      '#..t...X#',
+      '#########',
+    ],
+  },
+  {
+    id: 3,
+    name: 'Two Locks',
+    subtitle: 'One key opens the way to the next.',
+    par: 42,
+    map: [
+      '##L###L##',
+      '#c..#.#k#',
+      '#.#.#.#C#',
+      '#.#...#.#',
+      '#.###.#.#',
+      '#P..#...#',
+      '#.#.#.#L#',
+      '#.#...K.#',
+      '#.###.#.#',
+      '#t....#X#',
+      '#########',
+    ],
+  },
+  {
+    id: 4,
+    name: 'Hold the Door',
+    subtitle: 'You cannot stand in two places at once.',
+    par: 34,
+    map: [
+      '#L#####L#',
+      '#P......#',
+      '#.#...#.#',
+      '#.#.B.#.#',
+      '#.#.b.#.#',
+      '#.......#',
+      '#L##D##L#',
+      '#.......#',
+      '#.#B#.###',
+      '#...#.O##',
+      '#t.o##.X#',
+      '#########',
+    ],
+  },
+  {
+    id: 5,
+    name: "Violet's Garden",
+    subtitle: 'Everything you have learned.',
+    par: 64,
+    map: [
+      '##L###L##',
+      '#P..#t#k#',
+      '#.B.#.#.#',
+      '#.b.#.#.#',
+      '#...D.C.#',
+      '#L###.#L#',
+      '#c#....##',
+      '#.O.#B###',
+      '#.#.#o###',
+      '#.###L###',
+      '#.K....X#',
+      '#########',
+    ],
+  },
+];
+
+export const TOTAL_LEVELS = LEVELS.length;

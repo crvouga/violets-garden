@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <defs>
+    <radialGradient id="fur" cx="38%" cy="28%" r="80%">
+      <stop offset="0" stop-color="#5d5566"/>
+      <stop offset="0.45" stop-color="#2a2630"/>
+      <stop offset="1" stop-color="#0c0b0f"/>
+    </radialGradient>
+    <radialGradient id="furBody" cx="40%" cy="20%" r="85%">
+      <stop offset="0" stop-color="#4a4452"/>
+      <stop offset="0.5" stop-color="#211e26"/>
+      <stop offset="1" stop-color="#0a090c"/>
+    </radialGradient>
+    <radialGradient id="eye" cx="40%" cy="35%" r="70%">
+      <stop offset="0" stop-color="#7a5230"/>
+      <stop offset="0.6" stop-color="#2a1608"/>
+      <stop offset="1" stop-color="#0d0704"/>
+    </radialGradient>
+    <linearGradient id="collar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b98cff"/>
+      <stop offset="1" stop-color="#6e3fc4"/>
+    </linearGradient>
+    <radialGradient id="tag" cx="35%" cy="30%" r="75%">
+      <stop offset="0" stop-color="#ffe89a"/>
+      <stop offset="1" stop-color="#c9902a"/>
+    </radialGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.2"/>
+    </filter>
+  </defs>
+
+  <!-- ground shadow -->
+  <ellipse cx="128" cy="226" rx="70" ry="14" fill="#000" fill-opacity="0.28" filter="url(#soft)"/>
+
+  <!-- tail (curled, peeking at the side) -->
+  <path d="M182 150 c 18 -10 30 4 22 16 c -6 9 -18 8 -22 0" fill="none" stroke="#141218" stroke-width="12" stroke-linecap="round"/>
+  <path d="M184 152 c 14 -7 22 2 17 10" fill="none" stroke="#3c3742" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- body -->
+  <ellipse cx="128" cy="176" rx="64" ry="50" fill="url(#furBody)"/>
+  <!-- chest sheen -->
+  <ellipse cx="128" cy="180" rx="30" ry="26" fill="#3a3541" fill-opacity="0.35"/>
+
+  <!-- front paws -->
+  <ellipse cx="98" cy="216" rx="22" ry="13" fill="#1a171e"/>
+  <ellipse cx="158" cy="216" rx="22" ry="13" fill="#1a171e"/>
+  <path d="M88 220 v6 M98 222 v6 M108 220 v6" stroke="#050408" stroke-width="3" stroke-linecap="round"/>
+  <path d="M148 220 v6 M158 222 v6 M168 220 v6" stroke="#050408" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- collar -->
+  <path d="M74 156 Q 128 186 182 156 L 182 170 Q 128 202 74 170 Z" fill="url(#collar)"/>
+  <path d="M78 160 Q 128 188 178 160" fill="none" stroke="#e5d4ff" stroke-opacity="0.5" stroke-width="2"/>
+  <circle cx="128" cy="184" r="11" fill="url(#tag)" stroke="#8a5f14" stroke-width="2"/>
+  <circle cx="128" cy="184" r="3" fill="#8a5f14" fill-opacity="0.5"/>
+
+  <!-- ears -->
+  <path d="M56 92 C 40 60, 70 40, 94 70 L 100 100 Z" fill="#0a090c"/>
+  <path d="M200 92 C 216 60, 186 40, 162 70 L 156 100 Z" fill="#0a090c"/>
+
+  <!-- head -->
+  <ellipse cx="128" cy="108" rx="78" ry="70" fill="url(#fur)"/>
+
+  <!-- inner ear folds -->
+  <path d="M62 88 C 58 72, 76 62, 90 78" fill="none" stroke="#2e2a34" stroke-width="5" stroke-linecap="round"/>
+  <path d="M194 88 C 198 72, 180 62, 166 78" fill="none" stroke="#2e2a34" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- brow wrinkles -->
+  <path d="M84 84 Q 128 66 172 84" fill="none" stroke="#000" stroke-opacity="0.6" stroke-width="6" stroke-linecap="round"/>
+  <path d="M92 98 Q 128 84 164 98" fill="none" stroke="#000" stroke-opacity="0.4" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- eyes (closed) -->
+  <path d="M82 116 Q 98 124 114 116" fill="none" stroke="#060305" stroke-width="5" stroke-linecap="round"/>
+  <path d="M142 116 Q 158 124 174 116" fill="none" stroke="#060305" stroke-width="5" stroke-linecap="round"/>
+  <!-- muzzle -->
+  <ellipse cx="128" cy="146" rx="40" ry="28" fill="#17151b"/>
+  <path d="M96 140 Q 128 128 160 140" fill="none" stroke="#000" stroke-opacity="0.5" stroke-width="4" stroke-linecap="round"/>
+  <!-- nose -->
+  <path d="M112 136 Q 128 126 144 136 Q 140 150 128 152 Q 116 150 112 136 Z" fill="#050408"/>
+  <ellipse cx="121" cy="136" rx="4" ry="2.5" fill="#3a3540" fill-opacity="0.8"/>
+  <!-- mouth -->
+  <path d="M128 152 V 162" stroke="#000" stroke-width="4" stroke-linecap="round"/>
+  <path d="M106 162 Q 128 178 150 162" fill="none" stroke="#000" stroke-width="4" stroke-linecap="round"/>
+  <!-- tongue -->
+  <path d="M118 168 Q 128 186 138 168 Z" fill="#ec6f92"/>
+  <path d="M128 170 V 180" stroke="#c9536f" stroke-width="2"/>
+</svg>
