@@ -1,4 +1,4 @@
-# Violet
+# Violet's Garden
 
 A polished, mobile-first Sokoban-style puzzle maze game starring **Violet**, a black pug.
 Guide Violet through five hedge mazes: grab keys to unlock gates, push crates onto pressure
