@@ -24,6 +24,9 @@
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.28.0",
+  "engines": {
+    "node": ">=22"
+  },
   "dependencies": {
     "phaser": "^3.90.0",
     "tone": "^15.1.22"
