@@ -1,0 +1,11 @@
+node_modules
+dist
+.git
+.github
+.env*
+.vercel
+test-results
+*.log
+.DS_Store
+Dockerfile
+.dockerignore

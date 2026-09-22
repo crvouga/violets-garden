@@ -54,6 +54,20 @@ pnpm format     # prettier
 pnpm check      # format + lint + typecheck + test
 ```
 
+### Docker
+
+```sh
+docker build -t violets-garden .
+docker run --rm -p 8080:80 violets-garden   # http://localhost:8080
+```
+
+### Deployment
+
+Hosted on the shared fleet from [crvouga/workspace](https://github.com/crvouga/workspace)
+(see its [llms.txt](https://raw.githubusercontent.com/crvouga/workspace/main/llms.txt)). Every push
+to `main` builds the Dockerfile and publishes `ghcr.io/crvouga/chrisvouga-violets-garden`, which the
+fleet then deploys.
+
 ### Project layout
 
 ```
